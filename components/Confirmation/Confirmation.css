@@ -1,0 +1,56 @@
+
+.confirmation-container {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 40px;
+    background: #f0fff4;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+}
+
+.passenger-list {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.passenger-card {
+    background: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.confirmation-container h2 {
+    color: #28a745;
+    margin-bottom: 10px;
+}
+
+
+
+.passenger-card h3 {
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.passenger-card p {
+    font-size: 16px;
+    margin: 8px 0;
+}
+
+.passenger-card button {
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.passenger-card button:hover {
+    background-color: #0056b3;
+}

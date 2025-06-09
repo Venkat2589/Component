@@ -1,0 +1,83 @@
+.add-passengers-page {
+    min-height: 100vh;
+    padding: 40px 20px;
+    background: linear-gradient(to right, #f0f8ff, #e6f7ff);
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.add-passengers-page h2 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.add-passengers-page p {
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+    margin: 5px 0;
+}
+
+.user-id-input {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.user-id-input input {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    width: 250px;
+    margin-left: 10px;
+}
+
+.passenger-form {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 15px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.passenger-form input,
+.passenger-form select {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+button {
+    display: block;
+    margin: 30px auto 0;
+    padding: 12px 24px;
+    background-color: #28a745;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .passenger-form {
+        padding: 15px;
+    }
+
+    .user-id-input input {
+        width: 100%;
+        margin-top: 10px;
+    }
+}

@@ -1,0 +1,102 @@
+/* Full-page layout */
+.flight-results-page {
+    min-height: 100vh;
+    padding: 40px 20px;
+    background: linear-gradient(to right, #5e8e94, #ffffff);
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Title */
+.page-title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+    background: -webkit-linear-gradient(#918b8b, #1c1c1c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Grid layout for cards */
+
+.flight-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+
+/* Flight card */
+.flight-card {
+    background :linear-gradient(to right, #bcb8c3, #9ad3ce);;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s ease;
+    width: 100%;
+    max-width: 600px;
+
+}
+
+.flight-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Header with logo */
+.flight-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+.flight-logo {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+/* Seat class options */
+.seat-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.seat-class {
+    background-color: #e6f0ff;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #004080;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+}
+
+/* Book button */
+.book-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.book-btn:hover {
+    background-color: #218838;
+}
+
+/* No flights message */
+.no-flights {
+    text-align: center;
+    font-size: 18px;
+    color: #555;
+}
