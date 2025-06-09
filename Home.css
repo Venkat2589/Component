@@ -1,0 +1,214 @@
+/* General Reset & Fonts */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .home-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #87CEFA, #f0f9ff);
+    color: #222;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: rgba(255, 255, 255, 0.85);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .logo {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1a73e8;
+    letter-spacing: 2px;
+    user-select: none;
+    transition: color 0.3s ease;
+    cursor: default;
+  }
+  
+  .logo:hover {
+    color: #0056b3;
+  }
+  
+  .nav-links .login-btn {
+    padding: 10px 22px;
+    border: 2px solid #1a73e8;
+    color: #1a73e8;
+    font-weight: 600;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-links .login-btn:hover {
+    background: #1a73e8;
+    color: white;
+    box-shadow: 0 8px 15px rgba(26, 115, 232, 0.3);
+  }
+  
+  /* Main Content */
+  .main-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 20px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    text-align: center;
+    margin-bottom: 70px;
+    max-width: 700px;
+    animation: fadeInDown 1s ease forwards;
+  }
+  
+  .hero-title {
+    font-size: 3.6rem;
+    font-weight: 900;
+    color: #0b3d91;
+    margin-bottom: 15px;
+    line-height: 1.2;
+  }
+  
+  .highlight {
+    background: linear-gradient(90deg, #ff512f, #dd2476);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rainbowText 4s linear infinite;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.3rem;
+    color: #555;
+    margin-bottom: 30px;
+    font-weight: 500;
+  }
+  
+  .cta-btn {
+    display: inline-block;
+    padding: 15px 45px;
+    font-size: 1.2rem;
+    color: white;
+    background: #ff512f;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    box-shadow: 0 8px 25px rgba(255,81,47,0.45);
+    transition: all 0.4s ease;
+  }
+  
+  .cta-btn:hover {
+    background: #dd2476;
+    box-shadow: 0 12px 30px rgba(221,36,118,0.6);
+    transform: translateY(-3px);
+  }
+  
+  /* Features Section */
+  .features {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1000px;
+  }
+  
+  .feature-card {
+    background: white;
+    border-radius: 15px;
+    padding: 30px 25px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.07);
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: default;
+    user-select: none;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+  }
+  
+  .feature-card .icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+    background: linear-gradient(45deg, #ff512f, #dd2476);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    line-height: 80px;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 8px 25px rgba(255,81,47,0.5);
+  }
+  
+  .feature-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 12px;
+    color: #0b3d91;
+  }
+  
+  .feature-card p {
+    color: #666;
+    font-weight: 500;
+    line-height: 1.4;
+  }
+  
+  /* Footer */
+  .footer {
+    background: #0b3d91;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-weight: 400;
+    user-select: none;
+  }
+  
+  .footer p {
+    margin: 5px 0;
+    font-size: 1rem;
+  }
+  
+  .footer-copy {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    opacity: 0.7;
+  }
+  
+  /* Animations */
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes rainbowText {
+    0%, 100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+  
